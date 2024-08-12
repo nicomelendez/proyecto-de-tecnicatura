@@ -1,4 +1,4 @@
-# 🏢 Proyecto de Final de Tecnicatura
+# 🏢 Proyecto Final de Tecnicatura
 
 El producto final del proyecto consiste en el desarrollo y verificación de un sistema informático para **gestionar gestión de usuarios, eventos, constancias, reclamos y ITRs** para la carrera en Licenciatura en Tecnologías de la Información (LTI) de la Universidad Tecnológica del Uruguay (UTEC).
 
