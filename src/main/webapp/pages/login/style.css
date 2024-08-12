@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.loginContenido {
+	height: 60vh;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 40px;
+	display: flex;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+.columnaIzq {
+	width: 90.4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../../utils/img/imagenFondoLogin2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px 0 0 15px;
+}
+
+.imagenapp {
+	max-width: 40px;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.173));
+}
+
+.columnaDer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 0 15px 15px 0;
+}
+
+.columnaDer .formularioLogin {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	min-width: 400px;
+}
+
+.columnaDer .formularioLogin .textoContenido {
+	max-width: 400px;
+}
+
+.columnaDer .formularioLogin .textoContenido h2 {
+	font-size: 30px;
+}
+
+.mensajeDeFormulario {
+	text-align: center;
+	font-size: 12px;
+}
+
+.columnaDer .formularioLogin label {
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.columnaDer .formularioLogin label input {
+	height: 20px;
+	border-style: none;
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 10px 15px;
+}
+
+.columnaDer .formularioLogin button {
+	padding: 10px 15px;
+	width: 100%;
+	border-style: none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	margin-top: 10px;
+	font-weight: 700;
+	color: #fefefe;
+}
+
+.columnaDer .formularioLogin button:hover {
+	cursor: pointer;
+	background-color: #10A8E1;
+}
+
+.columnaDer .formularioLogin .registrarse {
+	font-size: 12px;
+	text-align: center;
+}
+
+.columnaDer .formularioLogin .registrarse a:visited {
+	color: #10A8E1;
+}

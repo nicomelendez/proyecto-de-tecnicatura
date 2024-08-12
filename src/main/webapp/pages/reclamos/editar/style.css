@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.reportesContenidoAnalista {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.contenedorDeReclamosAnalista {
+	display: flex;
+}
+
+.modificarUnEstado {
+	display: flex;
+	width: 1000px;
+	gap: 90px;
+}
+
+.modificarUnEstado div {
+	display: flex;
+	flex-direction: column;
+}
+
+.titleCard {
+	font-weight: 800;
+}
+
+td {
+	padding: 10px;
+	text-align: left;
+	font-size: 12px;
+	color: #333;
+}
+
+tbody tr {
+	background-color: #fff;
+}
+
+
+.reportesContenidoAnalista div div label,
+.reportesContenidoAnalista div div p {
+	padding: 10px;
+}
+
+.reportesContenidoAnalista .detalles {
+	display: flex;
+}
+
+.reportesContenidoAnalista form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px 0;
+}
+
+.reportesContenidoAnalista div div form button {
+	margin-bottom: 20px;
+}
+
+.reportesContenidoEstudiante {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reportesContenidoEstudiante h2,
+.reportesContenidoAnalista h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.reportesContenidoEstudiante form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px 0;
+}
+
+
+.reportesContenidoEstudiante form label,
+.reportesContenidoAnalista form label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px 0;
+	font-weight: 600;
+}
+
+.reportesContenidoEstudiante form label input,
+.reportesContenidoEstudiante form label textarea,
+.reportesContenidoEstudiante form label select,
+.reportesContenidoEstudiante form button,
+.reportesContenidoAnalista form label textarea,
+.reportesContenidoAnalista form label select,
+.reportesContenidoAnalista form button {
+	border-style: none;
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 10px 12px;
+	color: #332f2c;
+	font: 12px;
+}
+
+.reportesContenidoAnalista form label .comboBoxEstado {
+	margin-bottom: 50px;
+}
+
+.reportesContenidoEstudiante form div {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.reportesContenidoEstudiante form div button,
+.reportesContenidoAnalista form button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	font-weight: 700;
+	color: #fefefe;
+}
+
+button:hover,
+select:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.btns {
+	display: flex;
+	justify-content: center;
+}
+
+.reportesContenidoEstudiante div form .btnCancelar,
+.reportesContenidoAnalista div form .btnCancelar {
+	background-color: red;
+	border-style: none;
+	border-radius: 5px;
+	font-weight: 700;
+	color: #fefefe;
+}

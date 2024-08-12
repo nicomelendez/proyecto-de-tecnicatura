@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.constanciaContenido {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px
+}
+
+.constanciaContenido form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.constanciaContenido form label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 12px;
+}
+
+.constanciaContenido form input,
+.constanciaContenido form select,
+.constanciaContenido form button {
+	border-style: none;
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 10px 12px;
+	color: #332f2c;
+	font: 12px;
+}
+
+.constanciaContenido form button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	font-weight: 700;
+	color: #fefefe;
+}
+textarea {
+	max-width: 308px;
+	min-width: 308px;
+	min-height: 80px;
+}
+
+.constanciaContenido form select:hover {
+	cursor: pointer;
+}
+
+.constanciaContenido form button:hover {
+	cursor: pointer;
+	background-color: #10A8E1;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="Proyecto-PInfra">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/PROYECTO_PFT</jta-data-source>
+		<class>com.servidor.entidades.Analista</class>
+		<class>com.servidor.entidades.Area</class>
+		<class>com.servidor.entidades.Constancia</class>
+		<class>com.servidor.entidades.Departamento</class>
+		<class>com.servidor.entidades.Estado</class>
+		<class>com.servidor.entidades.EstadoConstancia</class>
+		<class>com.servidor.entidades.EstadoConstanciaPK</class>
+		<class>com.servidor.entidades.EstadoJustificacion</class>
+		<class>com.servidor.entidades.EstadoJustificacionPK</class>
+		<class>com.servidor.entidades.EstadoReclamo</class>
+		<class>com.servidor.entidades.EstadoReclamoPK</class>
+		<class>com.servidor.entidades.Estudiante</class>
+		<class>com.servidor.entidades.Evento</class>
+		<class>com.servidor.entidades.EventoEstudiante</class>
+		<class>com.servidor.entidades.EventoEstudiantePK</class>
+		<class>com.servidor.entidades.EventoTutor</class>
+		<class>com.servidor.entidades.EventoTutorPK</class>
+		<class>com.servidor.entidades.Genero</class>
+		<class>com.servidor.entidades.Itr</class>
+		<class>com.servidor.entidades.Justificacion</class>
+		<class>com.servidor.entidades.Localidad</class>
+		<class>com.servidor.entidades.Reclamo</class>
+		<class>com.servidor.entidades.Rol</class>
+		<class>com.servidor.entidades.Tipo</class>
+		<class>com.servidor.entidades.Tutor</class>
+		<class>com.servidor.entidades.Usuario</class>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<property name="hibernate.show_sql" value="true" />
+			<property
+				name="javax.persistence.schema-generation.create-database-schemas"
+				value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

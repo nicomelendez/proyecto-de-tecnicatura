@@ -1,0 +1,535 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+
+@font-face {
+	font-family: 'Geist-UltraBlack';
+	src: url('./utils/fonts/Geist-UltraBlack.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geist-Bold';
+	src: url('./utils/fonts/Geist-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geist-Light';
+	src: url('./utils/fonts/Geist-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geist-Medium';
+	src: url('./utils/fonts/Geist-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geist-Regular';
+	src: url('./utils/fonts/Geist-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Geist-SemiBold';
+	src: url('./utils/fonts/Geist-SemiBold.otf') format('opentype');
+}
+
+/*Todo el documento*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	padding: 0 40px;
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: "encabezado" "contenido" "piedepagina";
+	grid-template-rows: 130px 0.95fr 30px;
+	font-family: 'Geist-Regular', sans-serif;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+/*Estructura del documento*/
+body {
+	background: url("./utils/img/fondo6.png") no-repeat;
+	background-size: cover;
+}
+
+/*Encabezado*/
+.encabezado {
+	grid-area: "encabezado";
+	min-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+
+.encabezado .imagenUtec {
+	width: 130px;
+}
+
+.encabezado .imagenUtec:hover {
+	filter: drop-shadow(-2px 2px 15px rgba(0, 174, 239, 0.673));
+}
+
+
+/*Menu*/
+.encabezado .menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+.encabezado .menu .links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	flex: 1;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+
+.encabezado .menu .links li {}
+
+.encabezado .menu .links li a {
+	all: initial;
+	font-family: 'Geist-SemiBold', sans-serif;
+	font-size: 15px;
+	color: #4C4C4C;
+}
+
+.encabezado .menu .links li a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.encabezado .btnSesion {
+	display: flex;
+	justify-content: end;
+	gap: 15px;
+	align-items: center;
+}
+
+.encabezado .btnSesion .btnPerfil {
+	all: initial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	background-color: #00aeef;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-family: 'Geist-SemiBold';
+	font-weight: 500;
+	border-radius: 9999px;
+}
+
+.encabezado .btnSesion .btnCerrarSesion {
+	all: initial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	background-color: red;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-family: 'Geist-SemiBold';
+	font-weight: 500;
+	border-radius: 9999px;
+}
+
+.encabezado .btnSesion .btnPerfil:hover {
+	background-color: #0098D1;
+}
+
+.encabezado .btnSesion .btnCerrarSesion:hover {
+	background-color: darkred;
+}
+
+.encabezado .btnSesion a {
+	all: initial;
+	font-size: 12px;
+	background-color: #00aeef;
+	padding: 15px 25px;
+	color: #fff;
+	font-family: 'Geist-SemiBold';
+	font-weight: 500;
+	border-radius: 9999px;
+}
+
+.encabezado .btnSesion a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*Contenido*/
+
+.contenido {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	margin-bottom: 30px;
+}
+
+
+.contenido .inicioContenido {
+	width: 100%;
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-between;
+	gap: 10px;
+	max-width: 1180px;
+}
+
+/*Informacion principal*/
+.contenido section .imageninicio {
+	max-width: 420px;
+	padding-top: 10px;
+	border-radius: 15px;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+}
+
+.contenido section .informacion {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contenido section .informacion .informacionPrincipal {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 580px;
+	margin-bottom: 30px;
+}
+
+.contenido section .informacion div .btnSaberMas {
+	all: initial;
+	font-size: 12px;
+	background-color: #00aeef;
+	padding: 15px 25px;
+	border-radius: 9999px;
+	font-family: 'Geist-SemiBold';
+	font-weight: 500;
+	color: #fff;
+	border-radius: 9999px;
+}
+
+.contenido section .informacion div .btnSaberMas:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 500ms;
+}
+
+.contenido section .informacion .informacionPrincipal h1 {
+	font-size: 40px;
+	text-align: left;
+	font-family: 'Geist-Bold', sans-serif;
+}
+
+.contenido section .informacion .informacionPrincipal p {
+	color: #00161E;
+	margin-bottom: 30px;
+}
+
+
+
+/*Estadisticas*/
+
+.contenido section .estadistica {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: start;
+}
+
+.contenido section .estadistica .estadisticaItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.contenido section .estadistica .estadisticaItem span {
+	font-size: 30px;
+	font-weight: 800;
+	font-family: 'Geist-Bold', sans-serif;
+	color: #00aeef;
+	font-weight: 800;
+}
+
+.contenido section .estadistica .estadisticaItem p {
+	font-size: 10px;
+	max-width: 140px;
+	color: #00161E;
+}
+
+/*Banner*/
+.banner {
+	min-width: 100%;
+	max-width: 1200px;
+}
+
+.pieDePagina {
+	grid-area: "piedepagina";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 30px;
+	font-family: 'Pixelify Sans', sans-serif;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+}
+
+.pieDePagina .imagenEquipo {
+	width: 80px;
+}
+
+.notificacion {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	background-color: white;
+	padding: 60px;
+	border: 1px solid #ccc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 400px;
+	align-items: center;
+	border-radius: 12px;
+	text-align: center;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+}
+
+.notificacion svg {
+	color: lightgreen;
+	padding-bottom: 30px;
+}
+
+.notificacion p {
+	font-family: 'Geist-Regular';
+}
+
+.notificacion h3 {
+	margin-bottom: 10px;
+	font-family: 'Geist-Bold';
+}
+
+.notificacion .notificacionContenido {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.diccionario {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	background-color: white;
+	padding:20px 40px;
+	border: 1px solid #ccc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 900px;
+	align-items: center;
+	border-radius: 12px;
+	text-align: center;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+}
+
+.diccionario p {
+	font-family: 'Geist-Regular';
+	font-size: 12px;
+}
+.diccionario .diccionarioContenido .palabrasClave{
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.diccionario .diccionarioContenido .palabrasClave div{
+	text-align: left;
+}
+
+.diccionario h3 {
+	margin-bottom: 8px;
+	font-family: 'Geist-Bold';
+}
+.diccionario .diccionarioContenido .palabrasClaveEvento{
+	padding-top: 10px;
+	text-align: left;
+}
+
+.diccionario .diccionarioContenido .btnCerrar{
+	width: 200px;
+	margin:0 auto;
+}
+
+.diccionario .diccionarioContenido .btnCerrar button{
+	padding: 10px 15px;
+	width: 100%;
+	border-style: none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	margin-top: 10px;
+	font-weight: 700;
+	color: #fefefe;
+}
+.diccionario .diccionarioContenido {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	background-color: white;
+	padding: 60px;
+	border: 1px solid #ccc;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+	text-align: center;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+	animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.modal p {
+	font-family: 'Geist-Regular';
+}
+
+.modal h3 {
+	margin-bottom: 10px;
+	font-family: 'Geist-Bold';
+}
+
+.modal .modalContenido {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.modal .modalContenido form {
+	margin-top: 20px;
+}
+
+.modal .modalContenido button {
+	cursor: pointer;
+	padding: 12px 16px;
+	width: 90px;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	color: #fff;
+	font-weight: 800;
+	font-family: 'Geist-Bold';
+}
+
+.modal .modalContenido .btnSi {
+	background-color: green;
+}
+
+.modal .modalContenido .btnSi:hover {
+	background-color: lightgreen;
+}
+
+.modal .modalContenido .btnNo {
+
+	background-color: red;
+}
+
+.modal .modalContenido .btnNo:hover {
+	background-color: lightcoral;
+}
+
+.superindice {
+	background-color: #00aeef;
+	color: #ffffff;
+	font-size: 10px;
+	padding: 3px 5.1px;
+	border-radius: 100%;
+}
+
+.btnReactivar {
+	background-color: lightgreen;
+}
+
+.btnReactivar:hover {
+	cursor: pointer;
+}
+
+.formReactivar {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.formReactivar select {
+	border-style: none;
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 12px 14px;
+	color: #332f2c;
+	font-size: 12px;
+	min-width: 170px;
+}
+
+.formReactivar button {
+	padding: 12px 14px;
+	background-color: #00aeef;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	font-family: 'Geist-SemiBold';
+
+}
+
+.formReactivar button:hover {
+	cursor: pointer;
+}
+
+.formReactivar select:hover {
+	cursor: pointer;
+}
+
+.mensajeDeTablaVacia {
+	margin-top: 20px;
+}

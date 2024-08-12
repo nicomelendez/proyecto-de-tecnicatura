@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.contenidoDeEditarConstancia {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px
+}
+
+.contenidoDeEditarConstancia form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.contenidoDeEditarConstancia form label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	font-size: 12px;
+}
+
+.contenidoDeEditarConstancia form input,
+.contenidoDeEditarConstancia form select,
+.contenidoDeEditarConstancia form button {
+	border-style: none;
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 10px 12px;
+	color: #332f2c;
+	font: 12px;
+}
+
+.contenidoDeEditarConstancia form button {
+	border-style: none;
+	border-radius: 5px;
+	background-color: #00aeef;
+	font-weight: 700;
+	color: #fefefe;
+}
+
+textarea {
+	max-width: 308px;
+	min-width: 308px;
+	min-height: 80px;
+}
+
+.contenidoDeEditarConstancia form select:hover {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.btns {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	width: 310px;
+}
+
+div form .btnCancelar {
+	background-color: red;
+	width: 310px;
+	border-style: none;
+	border-radius: 5px;
+	font-weight: 700;
+	color: #fefefe;
+	margin-bottom: 100px;
+}

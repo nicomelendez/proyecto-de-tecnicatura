@@ -1,0 +1,107 @@
+package com.servidor.entidades;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+import com.cliente.dto.DepartamentoDTO;
+
+import java.util.List;
+
+/**
+ * The persistent class for the DEPARTAMENTOS database table.
+ * 
+ */
+@Entity
+@Table(name = "DEPARTAMENTOS")
+@NamedQuery(name = "Departamento.findAll", query = "SELECT d FROM Departamento d")
+public class Departamento implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@SequenceGenerator(name = "DEPARTAMENTOS_IDDEPARTAMENTO_GENERATOR", sequenceName = "SEQ_ID_DEPARTAMENTO")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "DEPARTAMENTOS_IDDEPARTAMENTO_GENERATOR")
+	@Column(name = "ID_DEPARTAMENTO", unique = true, nullable = false, precision = 38)
+	private long idDepartamento;
+
+	@Column(nullable = false, length = 25)
+	private String nombre;
+
+	// bi-directional many-to-one association to Itr
+	@OneToMany(mappedBy = "departamento")
+	private List<Itr> itrs;
+
+	// bi-directional many-to-one association to Localidad
+	@OneToMany(mappedBy = "departamento")
+	private List<Localidad> localidades;
+
+	public Departamento() {
+
+	}
+
+	public Departamento(DepartamentoDTO oDepartamentoDTO) {
+		super();
+		this.idDepartamento = oDepartamentoDTO.getIdDepartamento();
+		this.nombre = oDepartamentoDTO.getNombre();
+	}
+
+	public long getIdDepartamento() {
+		return this.idDepartamento;
+	}
+
+	public void setIdDepartamento(long idDepartamento) {
+		this.idDepartamento = idDepartamento;
+	}
+
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public List<Itr> getItrs() {
+		return this.itrs;
+	}
+
+	public void setItrs(List<Itr> itrs) {
+		this.itrs = itrs;
+	}
+
+	public Itr addItr(Itr itr) {
+		getItrs().add(itr);
+		itr.setDepartamento(this);
+
+		return itr;
+	}
+
+	public Itr removeItr(Itr itr) {
+		getItrs().remove(itr);
+		itr.setDepartamento(null);
+
+		return itr;
+	}
+
+	public List<Localidad> getLocalidades() {
+		return this.localidades;
+	}
+
+	public void setLocalidades(List<Localidad> localidades) {
+		this.localidades = localidades;
+	}
+
+	public Localidad addLocalidade(Localidad localidade) {
+		getLocalidades().add(localidade);
+		localidade.setDepartamento(this);
+
+		return localidade;
+	}
+
+	public Localidad removeLocalidade(Localidad localidade) {
+		getLocalidades().remove(localidade);
+		localidade.setDepartamento(null);
+
+		return localidade;
+	}
+
+}

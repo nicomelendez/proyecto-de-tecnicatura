@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.contenidoDeGestion {
+	display: grid;
+	min-height: 100%;
+	grid-template-areas: "columnaIzquierda" "columnaDerecha";
+	grid-template-columns: 235px 1fr;
+}
+
+.contenidoDeGestion .columnaIzquierda {}
+
+.contenidoDeGestion .columnaIzquierda .informacionGestion {
+	position: relative;
+	top: 170px;
+	width: 300px;
+}
+
+.contenidoDeGestion .columnaIzquierda .informacionGestion .tituloGestion {
+	font-size: 38px;
+	font-family: 'Geist-UltraBlack', sans-serif;
+	font-weight: 800;
+	margin-bottom: 24px;
+}
+
+.contenidoDeGestion .columnaIzquierda .informacionGestion .tituloGestion .textoResaltado {
+		color: #00aeef;
+}
+
+.contenidoDeGestion .columnaDerecha {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion {
+	display: flex;
+	gap: 40px;
+	margin-right: 40px;
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem {
+	height: 400px;
+	width: 270px;
+	background-color: aliceblue;
+	list-style: none;
+	display: flex;
+	align-items: end;
+	border-radius: 10px;
+	transition: transform 0.5s ease;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.273));
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem:hover {
+	transform: scale(1.04);
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem:first-child {
+	background: url("/Proyecto-PInfra/utils/img/imagen-estudiante.png") no-repeat;
+	background-size: cover;
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem:nth-child(2) {
+	background: url("/Proyecto-PInfra/utils/img/imagen-analista.png") no-repeat;
+	background-size: cover;
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem:nth-child(3) {
+	background: url("/Proyecto-PInfra/utils/img/imagen-tutor.png") no-repeat;
+	background-size: cover;
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem .opcionLink {
+	all: initial;
+	font-size: 25px;
+	color: #fff;
+	font-family: 'Geist-Bold';
+	margin-bottom: 30px;
+	margin-left: 30px;
+	filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.873));
+}
+
+.contenidoDeGestion .columnaDerecha .opcionesGestion .opcionItem .opcionLink:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
